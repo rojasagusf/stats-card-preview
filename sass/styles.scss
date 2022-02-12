@@ -140,3 +140,63 @@ footer {
         color: hsl(277, 64%, 61%);
     }
 }
+
+
+@media screen and (max-width: 1050px) {
+    .card {
+
+        .text-section {
+            padding: 3rem 3rem 3rem 3rem;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 884px) {
+    .card {
+        margin: 2rem 1rem;
+        text-align: center;
+        flex-direction: column;
+        max-width: 375px;
+
+        .img-section {
+            min-height: 250px;
+            order: 0;
+        }
+
+        .text-section {
+            .title {
+                font-size: 2rem;
+            }
+
+            .main-paragraph {
+                font-size: 1rem;
+
+                line-height: 1.8;
+
+                margin-bottom: 2rem;
+            }
+        }
+
+        .stats {
+            flex-direction: column;
+            font-size: .8rem;
+
+            .stat {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+
+                span {
+                    font-size: .8rem;
+                }
+            }
+
+            h3:last-of-type {
+                margin: 0;
+            }
+        }
+    
+        
+    }
+}
