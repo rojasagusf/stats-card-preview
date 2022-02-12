@@ -113,25 +113,6 @@ body {
     }
 }
 
-footer {
-    margin: 1rem 0;
-    width: 100%;
-
-    position: relative;
-    bottom: 1rem;
-
-    color: hsl(0, 0%, 100%);
-
-    text-align: center;
-
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    a {
-        text-decoration: none;
-        color: hsl(277, 64%, 61%);
-    }
-}
-
 /* MEDIA QUERYS */
 
 @media screen and (max-width: 1050px) {
