@@ -21,8 +21,6 @@ body {
     background-color: hsl(233, 47%, 7%);
 
     font-size: 15px;
-    
-    position: relative;
 }
 
 .card {
@@ -111,22 +109,15 @@ body {
                 text-transform: uppercase;
                 letter-spacing: .2rem;
             }
-            
         }
-
-
     }
-
-
-
-
-   
 }
 
 footer {
+    margin: 1rem 0;
     width: 100%;
 
-    position: absolute;
+    position: relative;
     bottom: 1rem;
 
     color: hsl(0, 0%, 100%);
@@ -141,6 +132,7 @@ footer {
     }
 }
 
+/* MEDIA QUERYS */
 
 @media screen and (max-width: 1050px) {
     .card {
@@ -175,7 +167,7 @@ footer {
 
                 line-height: 1.8;
 
-                margin-bottom: 2rem;
+                margin-bottom: 2.5rem;
             }
         }
 
@@ -196,7 +188,5 @@ footer {
                 margin: 0;
             }
         }
-    
-        
     }
 }

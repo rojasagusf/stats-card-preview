@@ -16,7 +16,6 @@ body {
   align-items: center;
   background-color: #090b1a;
   font-size: 15px;
-  position: relative;
 }
 
 .card {
@@ -85,8 +84,9 @@ body {
 }
 
 footer {
+  margin: 1rem 0;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 1rem;
   color: white;
   text-align: center;
@@ -98,6 +98,7 @@ footer a {
   color: #aa5cdb;
 }
 
+/* MEDIA QUERYS */
 @media screen and (max-width: 1050px) {
   .card .text-section {
     padding: 3rem 3rem 3rem 3rem;
@@ -120,7 +121,7 @@ footer a {
   .card .text-section .main-paragraph {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   .card .stats {
     flex-direction: column;
