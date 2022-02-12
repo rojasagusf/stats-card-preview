@@ -1,8 +1,8 @@
 // Variables
-
-
-
-
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
 
 * {
     box-sizing: border-box;
@@ -12,4 +12,131 @@
 
 body {
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(233, 47%, 7%);
+
+    font-size: 15px;
+    
+    position: relative;
+}
+
+.card {
+    max-width: 1440px;
+    margin: 0 1rem;
+
+    display: flex;
+
+    background-color: hsl(244, 38%, 16%);
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    .img-section {
+        background-image: url("../images/image-header-desktop.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        flex-basis: 50%;
+        order: 1;
+
+        position: relative;
+    }
+
+    .img-section::before {
+        content: "";
+        background-color: rgba(127, 66, 160, 0.5);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .text-section {
+        flex-basis: 50%;
+
+        padding: 4rem 7rem 4rem 4rem;
+
+        .title {
+            color: hsl(0, 0%, 100%);
+
+            margin: 0;
+            margin-bottom: 2rem;
+
+            font-size: 2.8rem;
+            font-family: 'Inter', sans-serif;
+
+            span {
+                color: hsl(277, 64%, 61%);
+            }
+        }
+
+        .main-paragraph {
+            color: hsla(0, 0%, 100%, 0.75);
+
+            margin-bottom: 6rem;
+
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .stats {
+            color: hsl(0, 0%, 100%);
+
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 1.5rem;
+            font-family: 'Inter', sans-serif;
+
+            span {
+                color: hsla(0, 0%, 100%, 0.6);
+
+                margin-top: .5rem;
+
+                display: block;
+
+                font-size: .9rem;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: normal;
+
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+            }
+            
+        }
+
+
+    }
+
+
+
+
+   
+}
+
+footer {
+    width: 100%;
+
+    position: absolute;
+    bottom: 1rem;
+
+    color: hsl(0, 0%, 100%);
+
+    text-align: center;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    a {
+        text-decoration: none;
+        color: hsl(277, 64%, 61%);
+    }
 }

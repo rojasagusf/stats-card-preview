@@ -1,3 +1,101 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #090b1a;
+  font-size: 15px;
+  position: relative;
+}
+
+.card {
+  max-width: 1440px;
+  margin: 0 1rem;
+  display: flex;
+  background-color: #1b1938;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .img-section {
+  background-image: url("../images/image-header-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 50%;
+  order: 1;
+  position: relative;
+}
+.card .img-section::before {
+  content: "";
+  background-color: rgba(127, 66, 160, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card .text-section {
+  flex-basis: 50%;
+  padding: 4rem 7rem 4rem 4rem;
+}
+.card .text-section .title {
+  color: white;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+}
+.card .text-section .title span {
+  color: #aa5cdb;
+}
+.card .text-section .main-paragraph {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+.card .text-section .stats {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+.card .text-section .stats span {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #aa5cdb;
+}
 
 /*# sourceMappingURL=styles.css.map */
